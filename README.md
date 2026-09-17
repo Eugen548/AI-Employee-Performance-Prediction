@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/1373965991.svg)](https://doi.org/10.5281/zenodo.22807397)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22807397.svg)](https://doi.org/10.5281/zenodo.22807397)
 
 # Stage 11.2.1 — End-to-End Analytical Reproducibility Package
 
