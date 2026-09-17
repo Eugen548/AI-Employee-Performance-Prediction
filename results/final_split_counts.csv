@@ -1,0 +1,5 @@
+split,windows
+train,4448
+embargo,995
+intermediate_holdout,1469
+test,1488

@@ -1,0 +1,7 @@
+Feature,Train_absdiff_mean,Train_absdiff_population_sd,Zero_variance
+performance_mean_30d,0.019527260885080475,0.016058373314364948,False
+performance_std_30d,0.0311952598911576,0.02415992270306673,False
+performance_trend_30d,0.0702007975192416,0.057102505991394284,False
+attendance_rate_30d,0.0,0.0,True
+positive_behavior_count_30d,0.27742805755395683,0.5270672252494915,False
+negative_behavior_count_30d,0.05710431654676259,0.24339083185635224,False

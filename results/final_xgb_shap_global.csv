@@ -1,0 +1,13 @@
+View,Feature,MeanAbsSHAP,MeanSignedSHAP
+Benchmark,performance_mean_30d,0.122949764,-0.0026923015
+Benchmark,performance_std_30d,0.00961099,0.0016670551
+Benchmark,performance_trend_30d,0.009923229,0.0059603485
+Benchmark,attendance_rate_30d,0.004770875,0.0018592451
+Benchmark,positive_behavior_count_30d,0.0022172488,0.00011343426
+Benchmark,negative_behavior_count_30d,0.0013763453,0.00015683242
+Manager,performance_mean_30d,0.12216015,-0.0016976147
+Manager,performance_std_30d,0.010146328,0.0014427622
+Manager,performance_trend_30d,0.009129092,0.0052508307
+Manager,attendance_rate_30d,0.00473828,0.0017559251
+Manager,positive_behavior_count_30d,0.003104184,-1.3479201e-06
+Manager,negative_behavior_count_30d,0.0010351188,0.00014108222

@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you use this software or reproducibility package, please cite it using the metadata below."
+title: "AI Employee Performance Prediction"
+type: software
+version: 1.0.0
+date-released: 2026-09-17
+
+authors:
+  - family-names: "Vîlsan"
+    given-names: "Isabelle-Ana-Maria"
+    orcid: "https://orcid.org/0009-0001-8778-8683"
+
+  - family-names: "Bucur"
+    given-names: "Cătălin-Eugen"
+    orcid: "https://orcid.org/0009-0001-9379-9565"
+
+  - family-names: "Crihan"
+    given-names: "Georgiana"
+    orcid: "https://orcid.org/0000-0003-4981-6484"
+
+  - family-names: "Robe-Voinea"
+    given-names: "Elena-Gratiela"
+    orcid: "https://orcid.org/0000-0002-4341-4268"
+
+  - family-names: "Lungu"
+    given-names: "Otilia-Ana"
+    orcid: "https://orcid.org/0009-0008-6521-7258"
+
+  - family-names: "Dușe"
+    given-names: "Anastasia-Elena"
+    orcid: "https://orcid.org/0000-0002-2061-3993"
+
+repository-code: "https://github.com/Eugen548/AI-Employee-Performance-Prediction"
+
+license: MIT
+
+preferred-citation:
+  type: article
+  title: "From Managerial Evaluation to AI-Driven Prediction of Employee Performance"
+  authors:
+    - family-names: "Vîlsan"
+      given-names: "Isabelle-Ana-Maria"
+    - family-names: "Bucur"
+      given-names: "Cătălin-Eugen"
+    - family-names: "Crihan"
+      given-names: "Georgiana"
+    - family-names: "Robe-Voinea"
+      given-names: "Elena-Gratiela"
+    - family-names: "Lungu"
+      given-names: "Otilia-Ana"
+    - family-names: "Dușe"
+      given-names: "Anastasia-Elena"

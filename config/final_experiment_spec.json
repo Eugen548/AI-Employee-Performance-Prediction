@@ -1,0 +1,103 @@
+{
+  "study_title": "From Managerial Evaluation to AI-Driven Prediction of Employee Performance",
+  "observation_window_days": 30,
+  "target_horizon_days": 30,
+  "anchor_step_days": 30,
+  "eligibility": {
+    "benchmark_obs_min": 15,
+    "manager_obs_min": 15,
+    "target_obs_min": 15
+  },
+  "features": [
+    "performance_mean_30d",
+    "performance_std_30d",
+    "performance_trend_30d",
+    "attendance_rate_30d",
+    "positive_behavior_count_30d",
+    "negative_behavior_count_30d"
+  ],
+  "target": "future_actual_efficacy_mean_30d",
+  "models": {
+    "Linear Regression": {
+      "class": "sklearn.linear_model.LinearRegression"
+    },
+    "Random Forest": {
+      "n_estimators": 500,
+      "min_samples_leaf": 2,
+      "random_state": 42
+    },
+    "XGBoost": {
+      "n_estimators": 500,
+      "learning_rate": 0.03,
+      "max_depth": 4,
+      "subsample": 0.9,
+      "colsample_bytree": 0.9,
+      "objective": "reg:squarederror",
+      "random_state": 42
+    }
+  },
+  "split": {
+    "train_anchors": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "embargo_anchors": [
+      10,
+      14
+    ],
+    "test_anchors": [
+      15,
+      16,
+      17
+    ],
+    "intermediate_holdout_anchors": [
+      11,
+      12,
+      13
+    ]
+  },
+  "primary_metrics": [
+    "MAE",
+    "RMSE",
+    "R2"
+  ],
+  "discrepancy_index_features": [
+    "performance_mean_30d",
+    "performance_std_30d",
+    "performance_trend_30d",
+    "attendance_rate_30d",
+    "positive_behavior_count_30d",
+    "negative_behavior_count_30d"
+  ],
+  "behavior_information_loss_definition": "absdiff_positive_behavior_count_30d + absdiff_negative_behavior_count_30d",
+  "version": "Stage 11.2.1",
+  "discrepancy_standardization": {
+    "basis": "training partition only",
+    "absolute_difference": true,
+    "ddof": 0,
+    "zero_variance_rule": "standardized contribution set to 0",
+    "composite": "arithmetic mean across six predefined feature dimensions"
+  },
+  "robustness": {
+    "h2_h3_employee_cluster_bootstrap": {
+      "replicates": 5000,
+      "seed": 20260914,
+      "unit": "employee",
+      "interval": "percentile 95%"
+    },
+    "discrepancy_index_sensitivity": "exclude zero-variance attendance dimension; correlation coefficients unchanged under positive linear rescaling"
+  },
+  "intermediate_holdout_usage": "Intentionally unused for hyperparameter tuning, model selection, early stopping, preprocessing estimation, or final model fitting; retained as a temporally separated buffer in the frozen design.",
+  "upstream_reproducibility": {
+    "input": "published raw Factory Workers synthetic event-level CSV",
+    "scope": "feature engineering and analytical pipeline",
+    "excludes": "original WorkforceSim synthetic data-generation process"
+  }
+}
