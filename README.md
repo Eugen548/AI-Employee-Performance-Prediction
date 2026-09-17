@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/1373965991.svg)](https://doi.org/10.5281/zenodo.22807397)
+
 # Stage 11.2.1 — End-to-End Analytical Reproducibility Package
 
 This package supports the manuscript **From Managerial Evaluation to AI-Driven Prediction of Employee Performance**. It aligns the processed datasets, temporal split labels, feature-engineering code, and final analytical pipeline with the frozen publication specification.
